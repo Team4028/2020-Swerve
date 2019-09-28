@@ -223,8 +223,9 @@ public final class Vector2 implements Interpolable<Vector2>, Serializable {
 	 * @return A vector rotated by the specified amount
      * @since 0.2
 	 */
-	public Vector2 rotateBy(Rotation2 rotation) {
-		return new Vector2(x * rotation.cos - y * rotation.sin, x * rotation.sin + y * rotation.cos);
+	public Vector2 rotateBy(double rotation) 
+	{
+		return new Vector2(x * Math.cos(rotation) - y * Math.sin(rotation), x * Math.sin(rotation) + y * Math.cos(rotation));
 	}
 
     /**

@@ -1,6 +1,6 @@
-package org.frcteam2910.common.control;
+package frc.robot.utils;
 
-import org.frcteam2910.common.math.MathUtils;
+import frc.robot.math.MathUtils;
 
 public class PidController {
     private PidConstants constants;
